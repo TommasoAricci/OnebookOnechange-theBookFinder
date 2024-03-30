@@ -8,6 +8,8 @@ const loader = document.getElementById("loader");
 
 async function getBooks() {
 
+  bookList.innerHTML = "";
+
   if(choice.value !== "") loader.style.display = "block";
 
   let choiceValue = choice.value.toLowerCase();
@@ -71,13 +73,15 @@ async function getBooks() {
 
       // creating description div 
 
-      let descriptionDiv = createElem("div", "description", document.body, description);
+      let descriptionDiv = createElem("div", "descriptionDiv", document.body);
+      createElem("div", "descriptionText", descriptionDiv, description);
+
       descriptionDiv.style.display = "flex";
 
       // creating description close button
 
-      let closeTwo = createElem("button", "closeButtonTwo", descriptionDiv);
-      closeTwo.innerText = "X";
+      let closeTwo = createElem("img", "closeButtonTwo", descriptionDiv);
+      closeTwo.src = "src/img/remove.png";
       closeTwo.addEventListener("click", function (){
         descriptionDiv.style.display = "none";
       });
@@ -86,12 +90,18 @@ async function getBooks() {
 
   // creating listContainer close button
 
-  let closeOne = createElem("button", "closeButtonOne", listContainer);
-      closeOne.innerText = "X";
+  let closeOne = createElem("img", "closeButtonOne", listContainer);
+
+  closeOne.src = "src/img/remove.png";
       closeOne.addEventListener("click", function (){
         listContainer.style.display = "none";
         textbox.style.display = "flex";
         loader.style.display = "none";
+        choice.style.border = "none";
+        choice.value = "";
+
+        let descriptionDiv = document.querySelector(".descriptionDiv");
+        if(descriptionDiv) descriptionDiv.remove();
       });
       
 }

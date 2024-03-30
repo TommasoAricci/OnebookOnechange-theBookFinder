@@ -72,6 +72,10 @@
   .singleBook:first-child{
     margin-top: 0px;
   }
+
+  .singleBook:last-child{
+    margin-bottom: 0px;
+  }
   
   /*button*/
   
