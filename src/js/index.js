@@ -25,7 +25,7 @@ async function getBooks() {
     listContainer.style.display = "flex";              
     textbox.style.display = "none";
     let title = document.getElementById("title");                          // title
-    title.innerText = "Here are some " + data.name + " titles:";
+    title.innerText = data.works.length + " books found for " + `\"${choiceValue}\"`;
   } else setTimeout(() => {
       choice.style.border = "3px solid red";
       loader.style.display = "none";                                      // if not results                        
