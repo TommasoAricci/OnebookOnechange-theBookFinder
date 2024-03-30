@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/media-queries.css" />
+    <link rel="stylesheet" href="src/css/list.css" />
+    <link rel="stylesheet" href="src/css/description.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="titleDiv">
+      <h1 class="title">Make a change in this world, read a book.</h1>
+    </div>
+
+    <div class="textbox">
+      <label for="choice"></label>
+      <input
+        type="text"
+        name="choice"
+        id="choice"
+        placeholder="Digit your favorite genre"
+        autofocus
+      />
+      <button id="submit" type="submit">Submit</button>
+      <div id="loader" class="loader"></div>
+    </div>
+
+    <div class="listContainer">
+      <h1 id="title"></h1>
+      <div class="bookList"></div>
+    </div>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
