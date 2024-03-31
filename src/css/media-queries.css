@@ -1,16 +1,16 @@
 @media only screen and (min-width: 1024px) {
-  .listContainer {
-    width: 70%;
-  }
+    .listContainer {
+        width: 70%;
+    }
 
-  .message{
-    font-size: 40px;
-    width: 100%;
-    line-height: 70px;
-  }
+    .message {
+        font-size: 30px;
+        width: 100%;
+        line-height: 70px;
+    }
 
-  .descriptionText{
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+    .descriptionText {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }

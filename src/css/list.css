@@ -7,82 +7,81 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
     background-color: white;
     opacity: 70%;
     width: 90%;
     height: 80%;
     border-radius: 10px;
-  
+
     display: none;
-  }
-  
-  #title {
+}
+
+#title {
     position: absolute;
     top: 2%;
     text-align: center;
     margin-top: 20px;
     font-size: 30px;
     color: red;
-  }
-  
-  h2 {
+}
+
+h2 {
     color: white;
     font-size: 20px;
     text-align: center;
-  }
-  
-  p {
+}
+
+p {
     color: white;
-  }
-  
-  .bookList {
+}
+
+.bookList {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     height: 80%;
     width: 100%;
-  
+
     background-color: white;
     border-radius: 10px;
     margin-top: 70px;
-  
+
     overflow-y: scroll;
-  
-  }
-  
-  .singleBook {
+}
+
+.singleBook {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: black;
     width: 60%;
     border-radius: 10px;
     padding: 20px;
-  }
+}
 
-  .singleBook:first-child{
+.singleBook:first-child {
     margin-top: 0px;
-  }
+}
 
-  .singleBook:last-child{
+.singleBook:last-child {
     margin-bottom: 0px;
-  }
-  
-  /*button*/
-  
-  .bookLinkDiv{
+}
+
+/*button*/
+
+.bookLinkDiv {
     position: absolute;
     right: -70px;
-  }
-  
-  .bookLink{
+}
+
+.bookLink {
     width: 50px;
     height: 50px;
     display: flex;
@@ -92,23 +91,23 @@
     border-radius: 10px;
     cursor: pointer;
     background-color: red;
-  }
-  
-  .bookIcon{
+}
+
+.bookIcon {
     width: 40px;
-  }
-  
-  .bookLink:hover{
+}
+
+.bookLink:hover {
     background-color: rgb(234, 2, 2);
-  }
-  
-  .bookLink:active{
+}
+
+.bookLink:active {
     background-color: rgb(190, 1, 1);
-  }
-  
-  /*closeButtoOne*/
-  
-  .closeButtonOne {
+}
+
+/*closeButtoOne*/
+
+.closeButtonOne {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -118,19 +117,15 @@
     border: none;
     background-color: rgb(190, 1, 1);
     cursor: pointer;
-  }
-  
-  
-  /*scrollbar*/
-  
-  
-  .bookList::-webkit-scrollbar{
+}
+
+/*scrollbar*/
+
+.bookList::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  .bookList::-webkit-scrollbar-thumb{
+}
+
+.bookList::-webkit-scrollbar-thumb {
     background-color: red;
     border-radius: 10px;
-  }
-  
-  
+}
