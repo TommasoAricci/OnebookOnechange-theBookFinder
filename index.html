@@ -16,14 +16,21 @@
     <title>Title</title>
   </head>
   <body>
+    <header>
+      <div class="logoDiv">
+        <a href="index.html"
+          ><img class="logo" src="src/img/booklogo.png" alt="book"
+        /></a>
+      </div>
+      <div class="titleDiv">
+        <h2 class="firsttitle">one book</h2>
+        <h2 class="secondtitle">one change</h2>
+      </div>
+    </header>
 
-    <div class="logoDiv">
-        <a href="index.html"><img class="logo" src="src/img/booklogo.png" alt="book"></a>
-    </div>
-    <div class="titleDiv">
-      <h1 class="firsttitle">make a change</h1>
-      <h1 class="secondtitle">read a book.</h1>
-    </div> 
+    <h2 class="message">
+      Choose your favourite genre between hundreds of books
+    </h2>
 
     <div class="textbox">
       <label for="choice"></label>
@@ -31,7 +38,7 @@
         type="text"
         name="choice"
         id="choice"
-        placeholder="Digit your favorite genre"
+        placeholder="Digit your favourite genre"
         autofocus
       />
       <button id="submit" type="submit">Submit</button>
@@ -42,6 +49,12 @@
       <h1 id="title"></h1>
       <div class="bookList"></div>
     </div>
+
+    <footer>
+      <div class="logoDiv footer">
+        <p class="footertext">Copyright © 2022 di Tommaso Aricci</p>
+      </div>
+    </footer>
 
     <script src="src/js/index.js"></script>
   </body>

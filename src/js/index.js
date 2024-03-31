@@ -1,20 +1,21 @@
-const submit = document.getElementById("submit");
+let submit = document.getElementById("submit");
 const choice = document.getElementById("choice");
-const textbox = document.querySelector(".textbox");
-const listContainer = document.querySelector(".listContainer");
+let textbox = document.querySelector(".textbox");
+let listContainer = document.querySelector(".listContainer");
 const p = document.getElementById("list");
-const bookList = document.querySelector(".bookList");
-const loader = document.getElementById("loader");
+let bookList = document.querySelector(".bookList");
+let loader = document.getElementById("loader");
+const message = document.querySelector(".message");
 
 async function getBooks() {
 
-  bookList.innerHTML = "";
+  bookList.innerHTML = "";   // clean list
 
-  if(choice.value !== "") loader.style.display = "block";
-
-  let choiceValue = choice.value.toLowerCase();
+  if(choice.value !== "") loader.style.display = "block";         // loader
 
   // url for API
+
+  let choiceValue = choice.value.toLowerCase();
 
   let url = `https://openlibrary.org/subjects/${choiceValue}.json`;        
   let response = await fetch(url);
@@ -26,6 +27,7 @@ async function getBooks() {
   if (choice.value && data.work_count > 0) {
     listContainer.style.display = "flex";              
     textbox.style.display = "none";
+    message.style.display = "none";
     let title = document.getElementById("title");                          // title
     title.innerText = data.works.length + " books found for " + `\"${choiceValue}\"`;
   } else setTimeout(() => {
@@ -83,7 +85,7 @@ async function getBooks() {
       let closeTwo = createElem("img", "closeButtonTwo", descriptionDiv);
       closeTwo.src = "src/img/remove.png";
       closeTwo.addEventListener("click", function (){
-        descriptionDiv.style.display = "none";
+        descriptionDiv.remove();
       });
     });
   }
@@ -99,6 +101,7 @@ async function getBooks() {
         loader.style.display = "none";
         choice.style.border = "none";
         choice.value = "";
+        message.style.display = "block";
 
         let descriptionDiv = document.querySelector(".descriptionDiv");
         if(descriptionDiv) descriptionDiv.remove();
