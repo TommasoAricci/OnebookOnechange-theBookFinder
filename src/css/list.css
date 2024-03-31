@@ -1,6 +1,6 @@
 .listContainer {
     position: absolute;
-    top: 55%;
+    top: 52.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -63,10 +63,8 @@
     margin-bottom: 10px;
     background-color: black;
     width: 60%;
-    height: 200px;
     border-radius: 10px;
-    opacity: 100%;
-    padding: 10px;
+    padding: 20px;
   }
 
   .singleBook:first-child{
