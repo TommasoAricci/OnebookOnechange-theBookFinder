@@ -34,6 +34,7 @@ h2 {
 
 p {
     color: white;
+    text-align: center;
 }
 
 .bookList {
@@ -78,12 +79,12 @@ p {
 
 .bookLinkDiv {
     position: absolute;
-    right: -70px;
+    right: -55px;
 }
 
 .bookLink {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +95,7 @@ p {
 }
 
 .bookIcon {
-    width: 40px;
+    width: 30px;
 }
 
 .bookLink:hover {
