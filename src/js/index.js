@@ -77,13 +77,9 @@ async function getBooks() {
 
             // description conditions
 
-            let description;
-
-            if (dataDescription.description.value)
-                description = dataDescription.description.value;
-            else if (dataDescription.description)
-                description = dataDescription.description;
-            else description = "Sorry, there is no description for this book.";
+            let description = dataDescription.description
+                ? dataDescription.description.value || dataDescription.description
+                : "No description available";
 
             // show overlay
 
