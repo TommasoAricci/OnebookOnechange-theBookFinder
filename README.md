@@ -5,7 +5,8 @@
 
 # OnebookOnechange
 
-OnebookOnechange is a **bookfinder** that allows people to discover titles by genre using the OpenLibrary API. The goal of this initiative is to cultivate a passion for reading among individuals, spreading culture and new perspectives.
+OnebookOnechange is a **bookfinder** that allows people to discover titles by genre using the OpenLibrary API. <br>
+The goal of this initiative is to cultivate a passion for reading among individuals, spreading culture and new perspectives.
 
 ## How it works
 
@@ -16,17 +17,22 @@ Clicking on the submit button the browser send the infos to the server, showing 
 
 ## The choice of design
 
-<img src="https://i.postimg.cc/PJVmvT7j/Screenshot-2024-04-01-182246.png" width="300">
+The design I strcutured defines my **minimal** way to create webpages.
 
-I chose to use a library background image to create the intimate feeling that a library can provide.
-I put the textarea and the submit button right in the middle of the webpage in order to have only the main things in the page.
-Finally, the logo is right at the top as a header.
+I chose to use a library background image to create the **intimate feeling** that a library can provide.<br>
+I put the textarea and the submit button right in the middle of the webpage in order to respect the minimal design.<br>
+The message I wrote is a sort of **slogan** that encourage people to start reading.
+Finally, the logo is right at the top as a header and the copyright text at the bottom.
 
-This design defines my minimal way to create the webpages.
+<img src="https://i.postimg.cc/PJVmvT7j/Screenshot-2024-04-01-182246.png" width="500">
 
-The code is structured **mobile-first**.
+Then when all the data files have been reached, the user can see the **list of books** of the genre chosen previously.
 
-<img src="https://i.postimg.cc/TwRHvj5H/Screenshot-2024-04-01-183622.png" width="200">
+<img src="https://i.postimg.cc/KjCgTgwD/Screenshot-2024-04-01-184857.png" width="500">
+
+Through the button at the right of the titles the user can read the full **description** of that book.
+
+<img src="https://i.postimg.cc/8PmBfZwy/Screenshot-2024-04-01-184926.png" width="500">
 
 ***
 
