@@ -7,10 +7,22 @@
         font-size: 35px;
         width: 100%;
         line-height: 70px;
+        top: 25%;
     }
 
     .descriptionText {
         padding-left: 100px;
         padding-right: 100px;
+    }
+
+    #title {
+        font-size: 30px;
+        top: 1.5%;
+    }
+
+    .closeButtonOne {
+        position: absolute;
+        top: 4%;
+        right: 3%;
     }
 }
