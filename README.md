@@ -12,10 +12,10 @@ The goal of this initiative is to cultivate a passion for reading among individu
 
 The design I strcutured defines my **minimal** way to create webpages.
 
-I chose to use a library background image to create the **intimate feeling** that a library can provide.<br>
-In the middle of the webpage there is a **textbox** (Google style) where a user can type a genre (such as *horror*, *fantasy*, *fiction*, etc.) <br>
-The message I wrote is a sort of **slogan** that encourage people to start reading.
-Finally, the logo is right at the top as a header and the copyright text at the bottom.
+- I chose to use a library background image to create the **intimate feeling** that a library can provide.<br>
+- In the middle of the webpage there is a **textbox** (Google style) where a user can type a genre (such as *horror*, *fantasy*, *fiction*, etc.) <br>
+- The message I wrote is a sort of **slogan** that encourage people to start reading.
+- Finally, the logo is right at the top as a header and the copyright text at the bottom.
 
 <img src="https://i.postimg.cc/PJVmvT7j/Screenshot-2024-04-01-182246.png" width="500">
 
