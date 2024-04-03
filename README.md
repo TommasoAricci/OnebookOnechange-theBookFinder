@@ -23,21 +23,16 @@ The design I strcutured defines my **minimal** way to create webpages.
 
 Its operation is very easy.
 
-Clicking on the submit button the browser send the infos to the server. When all the data files have been reached, the user can see the **list of books** of the genre chosen previously. <br>
+Clicking on the submit button the browser send the infos to the server.<br>
+Here is the **first API request** (*//openlibrary.org/subjects/${choiceValue}.json*) in which the webpage gets the infos about the genre that the user typed before (choiceValue).<br>
+When all the data files have been reached, the user can see the **list of books** of the genre chosen previously. <br>
 
 <img src="https://i.postimg.cc/KjCgTgwD/Screenshot-2024-04-01-184857.png" width="500">
 
-Through the button at the right of the titles the user can read the full **description** of that book.
+Through the button at the right of the titles the **second API call** (//openlibrary.org${key}.json*) gets the **key** of the single book selected, where there is the description text.<br>
+So the user can read the full **description** of that book.<br>
 
 <img src="https://i.postimg.cc/8PmBfZwy/Screenshot-2024-04-01-184926.png" width="500">
-
-**There are two main API requests:**
-
-- https://openlibrary.org/subjects/${choiceValue}.json
-- https://openlibrary.org${key}.json
-
-The first one tries to contact the API getting the infos about the genre that the user typed before (choiceValue).<br>
-The second call tries to reach another API trying to get the key of the single book selected, where there is the description text.
 
 ***
 
