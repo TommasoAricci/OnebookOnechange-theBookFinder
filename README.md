@@ -31,12 +31,12 @@ Through the button at the right of the titles the user can read the full **descr
 
 <img src="https://i.postimg.cc/8PmBfZwy/Screenshot-2024-04-01-184926.png" width="500">
 
-There are two main API requests:
+**There are two main API requests:**
 
 - https://openlibrary.org/subjects/${choiceValue}.json
 - https://openlibrary.org${key}.json
 
-The first one tries to contact the API getting the infos about the genre that the user typed before (choiceValue).
+The first one tries to contact the API getting the infos about the genre that the user typed before (choiceValue).<br>
 The second call tries to reach another API trying to get the key of the single book selected, where there is the description text.
 
 ***
